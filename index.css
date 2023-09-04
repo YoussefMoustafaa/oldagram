@@ -1,0 +1,97 @@
+@font-face {
+    font-family: source sans pro;
+    src: url(fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: source sans pro-bold;
+    src: url(fonts/SourceSansPro-Bold.ttf);
+}
+
+:root {
+    --bold-font: source sans pro-bold;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 400px;
+    font-family: source sans pro;
+}
+
+#logo {
+    width: 130px;
+}
+
+.name {
+    font-family: var(--bold-font);
+}
+
+.location, .name {
+    margin: 0;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 5px;
+}
+
+.post-img {
+    width: 100%;
+}
+
+.icon {
+    width: 25px;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.heart-icon {
+    transition: transform 0.4s;
+}
+
+.heart-icon:active {
+    transform: scale(0.6);
+}
+
+.icons-list {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.likes-number {
+    font-family: var(--bold-font);
+    margin: 0 13px;
+    padding: 0;
+}
+
+.caption {
+    margin: 8px 13px;
+}
+
+.username {
+    font-family: var(--bold-font);
+    margin-right: 3px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    margin-bottom: 20px;
+}
